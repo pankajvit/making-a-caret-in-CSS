@@ -5,8 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caret in CSS</title>
+    <style>
+        #caret {
+            width: 0px;
+            height: 0px;
+            /* border: 50px solid black; */
+            border-top: 50px solid black;
+            border-right: 50px solid transparent;
+            border-bottom: 50px solid black;
+            border-left: 50px solid transparent;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div id="caret">
+
+    </div>
 </body>
 </html>
